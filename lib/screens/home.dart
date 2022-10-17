@@ -7,6 +7,7 @@ import 'package:jsskos_app/grid_contents/fees_pay.dart';
 import 'package:jsskos_app/grid_contents/grade_entry.dart';
 import 'package:jsskos_app/grid_contents/query.dart';
 import 'package:jsskos_app/grid_contents/sub_sel.dart';
+import 'package:jsskos_app/screens/SideNav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -20,6 +21,7 @@ class _HomeScrrenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const SideNavBar(),
       appBar: AppBar(
           centerTitle: true,
           title: const Text("JSSKOS APP"),
